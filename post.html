@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-NG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F766E">
+<meta name="color-scheme" content="light">
+<title>Dashboard · Anoix</title>
+<meta name="description" content="Bulk LPG for verified Nigerian gas retailers. Protected payments, verified distributors, tracked delivery.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="http://anoix.local/dashboard">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type"        content="website">
+<meta property="og:site_name"   content="Anoix">
+<meta property="og:title"       content="Dashboard · Anoix">
+<meta property="og:description" content="Bulk LPG for verified Nigerian gas retailers. Protected payments, verified distributors, tracked delivery.">
+<meta property="og:url"         content="http://anoix.local/dashboard">
+<meta property="og:image"       content="http://anoix.local/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"      content="en_NG">
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="Dashboard · Anoix">
+<meta name="twitter:description" content="Bulk LPG for verified Nigerian gas retailers. Protected payments, verified distributors, tracked delivery.">
+<meta name="twitter:image"       content="http://anoix.local/assets/img/og-image.png">
+
+<!-- iOS / PWA -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Anoix">
+<link rel="apple-touch-icon" href="/assets/img/icon-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+
+<!-- Perf: font preconnect + preload the exact stylesheet we use -->
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link rel="preload" as="style"
+      href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap">
+<link rel="stylesheet"
+      href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap"
+      media="print" onload="this.media='all'">
+
+<!-- Main CSS (cache-busted) -->
+<link rel="stylesheet" href="/assets/css/app.css?v=7">
+
+</head>
+<body class="theme-app">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="Anoix home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Anoix</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="/how-it-works">How it works</a>
+      <a href="/for-distributors">For distributors</a>
+      <a href="/trust">Trust</a>
+    </nav>
+    <a class="bell" href="/notifications" aria-label="Notifications">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M6 8a6 6 0 1112 0c0 7 3 7 3 7H3s3 0 3-7z"/><path d="M10 21a2 2 0 004 0"/>
+  </svg>
+  <span class="bell__badge">8</span></a>    <div class="nav-actions">
+              <a class="btn btn-ghost" href="/dashboard">Dashboard</a>
+        <form method="post" action="/logout" class="inline">
+          <input type="hidden" name="_csrf" value="84bc4447606af4ceeed96a5c80983cb136ae00c3bc86e5541fe7cd718de2539c">          <button class="btn btn-outline" type="submit">Sign out</button>
+        </form>
+          </div>
+  </div>
+</header>
+<div class="offline-banner" data-offline-banner hidden role="status">
+  You're offline — Anoix will retry when the connection returns.
+</div><main id="main">
+<section class="dashboard container">
+  <header class="dash-head">
+    <div>
+      <p class="eyebrow"><span class="dot"></span> Operations workspace</p>
+      <h1>Welcome, Anoix</h1>
+      <p class="muted">Phase 1 is live — verification, orders and payments arrive in later phases.</p>
+    </div>
+  </header>
+
+  <div class="grid-3">
+    <article class="card">
+      <h2>Account</h2>
+      <p><strong>Role:</strong> ops</p>
+      <p><strong>Status:</strong> active</p>
+              <p><strong>Ops permissions:</strong> verifier, dispute_reviewer, finance</p>
+          </article>
+    <article class="card">
+      <h2>Security</h2>
+      <p class="muted">You are signed in on this device. Sessions are server-side; CSRF is enforced on all state-changing routes.</p>
+      <form method="post" action="/logout"><input type="hidden" name="_csrf" value="84bc4447606af4ceeed96a5c80983cb136ae00c3bc86e5541fe7cd718de2539c">        <button class="btn btn-outline btn-block" type="submit">Sign out</button>
+      </form>
+    </article>
+      </div>
+</section></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand brand--footer"><span class="brand-mark"></span><span class="brand-name">Anoix</span></div>
+      <p class="muted">Bulk LPG for verified Nigerian retailers. Protected payments, tracked delivery.</p>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <ul>
+        <li><a href="/how-it-works">How it works</a></li>
+        <li><a href="/for-distributors">For distributors</a></li>
+        <li><a href="/trust">Trust &amp; safety</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Account</h4>
+      <ul>
+        <li><a href="/login">Sign in</a></li>
+        <li><a href="/register">Create account</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copy">
+    <small>&copy; 2026 Anoix. All prices in Nigerian Naira (₦). Quantity in kg.</small>
+  </div>
+</footer><script src="/assets/js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# PHP
+vendor/
+.env
+storage/logs/
+storage/uploads/
+/.idea
+.vscode
+.DS_Store
+node_modules/
+/.env.local
